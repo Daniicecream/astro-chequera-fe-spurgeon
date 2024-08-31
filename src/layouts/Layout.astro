@@ -16,7 +16,7 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="py-10">
 		<slot />
 	</body>
 </html>
@@ -33,7 +33,7 @@ const { title } = Astro.props;
 		);
 	}
 	html {
-		font-family: system-ui, sans-serif;
+		font-family: Cambria, system-ui, sans-serif;
 		background: #13151a;
 	}
 	code {

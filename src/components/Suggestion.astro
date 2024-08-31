@@ -1,0 +1,18 @@
+---
+const res = await fetch("https://la-chequera-del-banco-de-la-fe1.p.rapidapi.com/api/lectura_anual", {
+    method: 'GET',
+    headers: {
+        'x-rapidapi-key': import.meta.env.RAPIDAPI_KEY,
+		'x-rapidapi-host': 'la-chequera-del-banco-de-la-fe1.p.rapidapi.com'
+    }
+})
+
+const data = await res.json();
+console.log(data)
+---
+
+<div class="flex justify-center py-10 gap-6">
+    <p class="text-white font-light text-sm italic">AT: {data.antiguo_testamento}</p>
+    <p class="text-white font-light text-sm italic">NT: {data.nuevo_testamento}</p>
+    <p class="text-white font-light text-sm italic">Sabiduria: {data.sabiduria}</p>
+</div>
