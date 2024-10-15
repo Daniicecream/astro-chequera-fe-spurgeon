@@ -1,2 +1,2 @@
 View this project:
-https://www.p04-chequera-fe.netlify.app
+https://p04-chequera-fe.netlify.app
